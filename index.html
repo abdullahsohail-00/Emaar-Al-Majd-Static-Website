@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EMAAR AL MAJD</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/icon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/google_translator.css" type="text/css">
+
+</head>
+ 
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid ">
+        <div class="row bg-secondary py-2 px-xl-5 ">
+            <div class="col-6 my-auto">
+                <div class="d-inline-flex align-items-center flex-column flex-sm-row">
+                    <a class="text-dark top-bar-number mr-md-3" href="tel:+964 775 521 8848">
+                        <i class="fas fa-phone-alt"></i> +964 775 521 8848
+                    </a>
+                    <a class="text-dark d-md-block d-none"  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@emaaralmajdcompany.com" target="_blank">
+                        <i class="fas fa-envelope"></i> info@emaaralmajdcompany.com
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 text-center text-lg-right">
+                <div id="google_translate_element" ></div>
+            </div>
+        </div>
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href="index.html" class="text-decoration-none">
+                      <img src="img/emar-logo.png" class="img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-6 text-left">
+               
+                <form action="" onsubmit="return false;">
+                    <div class="search-container">
+                        <input type="text" id="search-input" class="search-input" placeholder="Search for products" onkeyup="filterProducts()">
+                        <div class="search-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                </form>
+                <div id="suggestions-container" class="suggestions-container"></div>
+                
+            </div>
+             
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-5">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0 text-white">Categories</h6>
+                    <i class="fa fa-angle-down text-white"></i>
+                </a>
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Iphones <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="shop.html" class="dropdown-item">Iphone 12 Pro</a>
+                                <a href="shop.html" class="dropdown-item">Iphone 12 Pro Max</a>
+                                <a href="shop.html" class="dropdown-item">Iphone 13 Pro</a>
+                                <a href="shop.html" class="dropdown-item">Iphone 13 Pro Max</a>
+
+                                <a href="shop.html" class="dropdown-item">Iphone 14 Pro</a>
+
+                                <a href="shop.html" class="dropdown-item">Iphone 14 Pro Max</a>
+
+                            </div>
+                        </div>
+                        <a href="shop.html" class="nav-item nav-link">Airpods</a>
+                        <a href="shop.html" class="nav-item nav-link">MacBooks</a>
+                        <a href="shop.html" class="nav-item nav-link">Apple Watches</a>
+                        <a href="shop.html" class="nav-item nav-link">Xioami Phones</a>
+                        <a href="shop.html" class="nav-item nav-link">Xioami Tablets</a>
+
+                        <a href="shop.html" class="nav-item nav-link">Samsung Phones</a>
+                        <a href="shop.html" class="nav-item nav-link">Samsung Watches</a>
+
+                        <a href="shop.html" class="nav-item nav-link">Redmi Phones</a>
+                        <a href="shop.html" class="nav-item nav-link">Redmi Watches</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="index.html" class="text-decoration-none d-block d-lg-none w-75">
+                          <img src="img/emar-logo.png" class="img-fluid  " alt="">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About Us</a>
+                            <a href="shop.html" class="nav-item nav-link">Shop</a>
+                             
+                            <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
+                        </div>
+                         
+                    </div>
+                </nav>
+                <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height: 410px;">
+                            <img class="img-fluid" src="img/banner-1.png" alt="Image">
+                            <div class="carousel-caption d-flex flex-column   justify-content-center">
+                                <div class="p-3" style="max-width: 590px;">
+                                    <span class="custom-badge mb-2">
+                                        <i class="fas fa-percent"></i>
+                                        <span class="text-primary mr-1">50% OFF </span>on all Apple Products
+                                    </span>
+                                    <h3 class=" my-md-2">Top Tech: Smartphones, Laptops, Tablets & More</h3>
+                                    <p class="mb-3">Discover the latest in smartphones, laptops, and tablets. Grab unbeatable deals and upgrade your tech today!</p>
+
+                                    <a href="" class="btn btn-primary py-2 px-3">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                         
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Featured Start -->
+    <div class="container-fluid pt-md-5 pt-1">
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-thumbs-up text-primary m-0 mr-2"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Satisfaction</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">New Arrivals</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured End -->
+
+
+    <div class="container my-5 categ-h">
+        <div class="see-all">
+            <h3>Shop by Categories</h3>
+            <a href="shop.html">See all categories →</a>
+        </div>
+        <div class="row gy-4">
+            <div class="col-6 col-lg-3">
+                <div class="category-card">
+                    <img src="img/New_Products/appleProducts/iPhone_14.png" class="" alt="Latest Iphones Models">
+                    <h5>Latest Iphones Models</h5>
+                    <p>View 100+ Products →</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="category-card">
+                    <img src="img/New_Products/Samsung/s22_ultra.png" alt="Latest Samsung Models">
+                    <h5>Latest Samsung Models</h5>
+                    <p>View 100+ Products →</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 mt-lg-0 mt-3">
+                <div class="category-card">
+                    <img src="img/New_Products/appleProducts/Series_8.png" alt="Latest Apple Watches">
+                    <h5>Latest Apple Watches</h5>
+                    <p>View 100+ Products →</p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 mt-lg-0 mt-3">
+                <div class="category-card">
+                    <img src="img/New_Products/appleProducts/airpods_pro_black.png" alt="Latest Apple Air Pods">
+                    <h5>Latest Apple Air Pods</h5>
+                    <p>View 100+ Products →</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="category-card d-flex justify-content-between align-items-end">
+                    <span class="align-text-bottom">
+                        <h5>Latest Apple Tablets</h5>
+                    <p>View 100+ Products →</p>
+                    </span>
+                    <span >
+                        <img src="img/New_Products/appleProducts/apple-tablet.png" class="w-75" alt="Latest Samsung Tablets">
+                    </span>
+                  
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="category-card d-flex justify-content-between align-items-end">
+                    <span class="align-text-bottom">
+                        <h5>Latest Apple Ipads</h5>
+                    <p>View 100+ Products →</p>
+                    </span>
+                    <span >
+                        <img src="img/New_Products/appleProducts/mac.png" class="w-75" alt="Latest Samsung Tablets">
+                    </span>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid py-5  categ-h">
+        <div class="container">
+            <div class="see-all">
+                <h3>Top Trending Mobile Phones</h3>
+                <a href="shop.html">See all Products →</a>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div    class="owl-carousel vendor-carousel"> 
+                        <div class="product-item-card"   >
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/Samsung/a14_5g.png" class="w-75 mx-auto" alt="Samsung A14 5G">
+
+                            </div>
+                            <p >
+                                SAMSUNG PHONES
+                            </p >
+                            <h5  >Samsung A14 5G</h5>
+                            <p>64 GB | 128 GB </p>
+                        </div>
+                        <div class="product-item-card"  >
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/appleProducts/iPhone_15_Pro_Max.png" class="w-75 mx-auto" alt="Iphone 15 Pro Max">
+
+                            </div>
+                            <p >
+                                IPHONE
+                            </p>
+                            <h5  >Iphone 15 Pro Max</h5>
+                            <p>64 GB | 128 GB | 256 GB</p>
+                        </div>
+                        <div class="product-item-card"  >
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/Xiaomi/11_LITE.png" class="w-75 mx-auto" alt="Latest Iphones Models">
+
+                            </div>
+                            <p >
+                                XIAOMI
+                            </p>
+                            <h5  >Mi 11 Lite</h5>
+                            <p>8 GB | 256 GB </p>
+                        </div>
+                        <div class="product-item-card"  >
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/appleProducts/Apple_Watch_Series_6.png" class="w-75 mx-auto" alt="Latest Iphones Models">
+
+                            </div>
+                            <p >
+                                APPLE WATCH
+                            </p>
+                            <h5  >Apple Watch Series 6</h5>
+                            <p>Black | Blue | Golden</p>
+                        </div>
+                        <div class="product-item-card"  >
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/Samsung/watch_5_pro.png" class="w-75 mx-auto" alt="Latest Iphones Models">
+
+                            </div>
+                            <p >
+                                SAMSUNG WATCHES
+                            </p>
+                            <h5  >Galaxy Watch 5 Pro</h5>
+                            <p>Black</p>
+                        </div>
+                        <div class="product-item-card"  >
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/Xiaomi/band_8_pro.png" class="w-75 mx-auto" alt="Latest Iphones Models">
+
+                            </div>
+                            <p >
+                                XIAOMI WATCHES
+                            </p>
+                            <h5  >Xiaomi Band 8 Pro</h5>
+                            <p>Black| Silver | Golden</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="img/promotion.jpg" class="img-fluid" alt="">
+    </div>
+
+    
+    <div class="container-fluid py-5  categ-h">
+        <div class="container">
+            <div class="see-all">
+                <h3>Top Products</h3>
+                <a href="shop.html">See all Products →</a>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="owl-carousel vendor-carousel"> 
+                        <div class="product-item-card">
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/Samsung/s22_ultra.png" class="w-75 mx-auto" alt="Latest Iphones Models">
+
+                            </div>
+                            <p>
+                                SAMSUNG PHONES
+                            </p>
+                            <h5  >Samsung S22 Ultra</h5>
+                            <p>64 GB | 256 GB | 512 GB</p>
+                        </div>
+                        <div class="product-item-card">
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/Xiaomi/Xiaomi_13t.png" class="w-75 mx-auto" alt="Latest Iphones Models">
+
+                            </div>
+                            <p>
+                                XIAOMI
+                            </p>
+                            <h5  >Xiaomi 13T</h5>
+                            <p>12 GB | 256 GB </p>
+                        </div>
+                        <div class="product-item-card">
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/appleProducts/apple-tablet.png" class="w-75 mx-auto" alt="Latest Iphones Models">
+
+                            </div>
+                            <p>
+                                APPLE IPAD
+                            </p>
+                            <h5  >Ipad Pro 2020 M1</h5>
+                            <p>128 GB | 256 GB | 512 GB</p>
+                        </div>
+                        <div class="product-item-card">
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/Xiaomi/Xiaomi_pad_6s.png" class="w-75 mx-auto" alt="Latest Iphones Models">
+
+                            </div>
+                            <p>
+                                XIAOMI TABLET
+                            </p>
+                            <h5  >Xiaomi Pad 6s Pro</h5>
+                            <p>8 GB | 256 GB </p>
+                        </div>
+                        <div class="product-item-card">
+                            <div class="product-item mb-3">
+                                <img src="img/New_Products/appleProducts/Airpods_Max.png" class="w-75 mx-auto" alt="Latest Iphones Models">
+
+                            </div>
+                            <p>
+                                APPLE AIRPODS
+                            </p>
+                            <h5  >Airpods Max</h5>
+                            <p>Black | Pink | Silver</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/banner-2.jpg" class="img-fluid"  alt="">
+                </div>
+                <div class="col-md-6 mt-md-0 mt-4">
+                    <img src="img/banner-3.png" class="img-fluid"  alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="container-fluid my-5" id="testimonials">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="see-all">
+                        <h3>Customers Feedback</h3>
+                        <div class="custom-nav">
+                            <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                            <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
+                          </div>
+                    </div>
+                    <div class="testimonials">
+                        <div class="owl-carousel testimonials-carousel owl-theme">
+                          <div class="item">
+                            <div class="testimonial-card">
+                              <img src="img/fatima.png" alt="Customer Image" class="customer-img">
+                              <div class="testimonial-content">
+                                <div class="stars">
+                                  ★★★★★
+                                </div>
+                                <p>"EMAAR AL MAJD's seamless international roaming keeps me connected during my travels. Highly satisfied!"</p>
+                                <div >
+                                    <h5 class="mb-0">Fatima Al Zahrani</h5>
+                                    <p class="company-name">Marketing Director, Global Reach</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="testimonial-card">
+                              <img src="img/ahmed.png" alt="Customer Image" class="customer-img">
+                              <div class="testimonial-content">
+                                <div class="stars">
+                                  ★★★★★
+                                </div>
+                                <p>"EMAAR AL MAJD's reliable mobile services have enhanced our business communication. We highly recommend them"</p>
+                                <div>
+                                    <h5 class="mb-0">Ahmed Al Saeed</h5>
+                                    <p class="company-name ">CEO, Al Saeed Enterprises</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="testimonial-card">
+                              <img src="img/omar.jpg" alt="Customer Image" class="customer-img">
+                              <div class="testimonial-content">
+                                <div class="stars">
+                                  ★★★★★
+                                </div>
+                                <p>"Switching to EMAAR AL MAJD was a great decision. Their service quality and pricing are excellent"</p>
+                                <div >
+                                    <h5 class="mb-0">Omar Al Qasim</h5>
+                                    <p class="company-name ">IT Manager, Tech Innovators</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="testimonial-card">
+                              <img src="img/layla.jpg" alt="Customer Image" class="customer-img">
+                              <div class="testimonial-content">
+                                <div class="stars">
+                                  ★★★★★
+                                </div>
+                                <p>"EMAAR AL MAJD's customer support is outstanding. Their services have exceeded our expectations."</p>
+                                <div >
+                                    <h5 class="mb-0">Layla AL Mansour</h5>
+                                    <p class="company-name ">Operations Manager, Elite Solutions</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+     </div>
+
+ 
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1189.6149618682648!2d44.390546726491735!3d35.4172742899316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1554d76582768b47%3A0x127e48768af60858!2sNazar%20Mall!5e0!3m2!1sen!2s!4v1724664354096!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Footer Section Begin -->
+        <footer class="footer-section">
+            <div class="container-fluid px-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/emar-logo-white.png" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="footer-widget">
+                  
+                                <ul class="pl-0">
+                                    <li><span><a href="shop.html"><u>Apple</u></a></span> - <span><a href="shop.html"><u>Samsung</u></a></span> - <span><a href="shop.html"><u>Xiaomi</u></a></span> - <span><a href="shop.html"><u>Redmi</u></a></span></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                         
+                        </div>
+                    </div>
+                    <div class="col-lg-8  col-md-6 mt-md-0 mt-4">
+                        <div class="footer-widget float-right footer-sec-section"   >
+                            <h5>Contact</h5>
+                            <ul>
+                                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@emaaralmajdcompany.com" target="_blank">info@emaaralmajdcompany.com
+                                </a></li>
+                                <li><a href="tel:+964 775 521 8848">+964 775 521 8848</a></li>
+                                <li><a href="javascript:void(0)">Al - Nasr District, near Nizar Mall, Kirkuk - Iraq</a></li>
+                                 
+                            </ul>
+                            
+                        </div>
+                    </div>
+                     
+                   
+                </div>
+            </div>
+            <div class="copyright-reserved">
+                <div class="container">
+                    <div class="row  text-center">
+                        <div class="col-lg-12 ">
+                            <div class="copyright-text">
+                              
+     Copyright &copy; 2024 All rights reserved, designed by purepixels.   </a>
+     
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End --> 
+    
+    
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <script>
+        document.querySelector('.nav-item.nav-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+ 
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    
+    <script src="js/main.js"></script>
+
+     
+  
+  <script src="js/searchproduct.js"></script>
+
+  <script src="js/google_transl.js"></script>
+ 
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,ar", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    
+
+</body>
+
+</html>
