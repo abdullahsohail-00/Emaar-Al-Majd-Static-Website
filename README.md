@@ -41,7 +41,7 @@ This repository hosts the source code for a static website for EMAAR AL MAJD, a 
 
 **How to Run Locally:**
 
-1. Clone the repository: `git clone https://github.com/your-username/emaar-al-majd.git`
+1. Clone the repository: `https://github.com/abdullahsohail-00/Emaar-Al-Majd-Static-Website.git`
 2. Open `index.html` in your web browser.  You will need an internet connection for the Google Translate functionality to work. For translation functionality add your  Google Translate API key to the `js/google_transl.js`
 
 
